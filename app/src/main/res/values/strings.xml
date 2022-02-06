@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Thrive Assignment - 1</string>
-
+    <string name="title">Spider man far from home Endgame, and more: all marvel</string>
+    <string name="cnn">CNN</string>
+    <string name="date">2019-07-03</string>
+    <string name="headlines">HEADLINES</string>
+    <string name="todo">TODO</string>
 </resources>

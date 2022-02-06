@@ -19,55 +19,33 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
-            android:text="HEADLINES"
+            android:text="@string/headlines"
             android:textColor="@color/white"
             android:textSize="29sp" />
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/rvLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="90dp"
-        android:gravity="center_horizontal">
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/ivImageView1"
-            android:layout_width="383dp"
+            android:layout_width="match_parent"
             android:layout_height="238dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="17dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
             android:foregroundGravity="center"
             android:src="@drawable/news2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="142dp"
-            android:text="Uttar Pradesh"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="182dp"
-            android:text="CNN"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv3"
@@ -75,9 +53,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="123dp"
-            android:layout_marginTop="184dp"
-            android:text="2019-07-03"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="198dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/date"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -87,22 +66,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="142dp"
-            android:text="Uttar Pradesh"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="182dp"
-            android:text="CNN"
-            android:textColor="@color/white"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/title"
+            android:textColor="#f2f2f2"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -111,21 +80,24 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="123dp"
-            android:layout_marginTop="184dp"
-            android:text="2019-07-03"
-            android:textColor="@color/white"
-            android:textSize="15sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/cnn"
+            android:textColor="#bababa"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
-
         <ImageView
-            android:layout_width="383dp"
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
             android:layout_height="238dp"
             android:layout_below="@id/ivImageView1"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="10dp"
+            android:contentDescription="@string/todo"
             android:foregroundGravity="center"
             android:src="@drawable/news2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -137,33 +109,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="142dp"
-            android:text="Uttar Pradesh"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="182dp"
-            android:text="CNN"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="123dp"
-            android:layout_marginTop="184dp"
-            android:text="2019-07-03"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="443dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/date"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -173,22 +122,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="142dp"
-            android:text="Uttar Pradesh"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="182dp"
-            android:text="CNN"
-            android:textColor="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="371dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/title"
+            android:textColor="#f2f2f2"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -197,15 +136,70 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="123dp"
-            android:layout_marginTop="184dp"
-            android:text="2019-07-03"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="442dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/cnn"
+            android:textColor="#bababa"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            android:layout_below="@id/img2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/todo"
+            android:foregroundGravity="center"
+            android:src="@drawable/news2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="443dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/date"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="371dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/title"
+            android:textColor="#f2f2f2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="442dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/cnn"
+            android:textColor="#bababa"
+            android:textSize="12sp"
+            android:textStyle="bold" />
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
